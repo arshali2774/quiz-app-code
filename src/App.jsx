@@ -35,7 +35,6 @@ function App() {
           >
             <h1 className='text-4xl font-semibold'>Quiz App</h1>
           </motion.div>
-
           {gameState === 'menu' && <Menu />}
           {gameState === 'playing' && <Quiz />}
         </div>
@@ -43,6 +42,7 @@ function App() {
         <div className='w-full bg-red-300 h-screen flex flex-col items-center justify-center gap-10 transition duration-[1000ms]'>
           <h1 className='text-4xl font-semibold'>Quiz App</h1>
           {gameState === 'menu' && <Menu />}
+          {gameState === 'playing' && <Quiz />}
         </div>
       )}
     </GameStateContext.Provider>
