@@ -21,6 +21,7 @@ const Quiz = () => {
     if (Questions[currentQuestion].answer === optionChosen) {
       setCurrentQuestion((oldVal) => oldVal + 1);
     } else {
+      
     }
   };
   const container = {
